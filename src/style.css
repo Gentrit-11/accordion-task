@@ -1,0 +1,92 @@
+#root {
+    overflow: hidden;
+    font-family: "Courier New", Courier, monospace;
+  }
+  h1 {
+    text-align: center;
+    color: #4d4639;
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  .wrapper {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+  
+    align-items: center;
+  }
+  .accordion {
+    margin-bottom: 300px;
+  
+    width: 700px;
+  }
+  .item1 {
+    background-color: hsl(0, 50%, 98%);
+    margin-bottom: 5px;
+    padding: 5px 20px;
+  }
+  .item2 {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    width: 668px;
+  }
+  .item2,
+  .text {
+    color: #85662b;
+    cursor: pointer;
+    margin-right: 100px;
+  }
+  .item2,
+  .item3 {
+    display: flex;
+    align-items: center;
+  }
+  .item3,
+  span {
+    margin-left: 30px;
+    color: black;
+  }
+  
+  .title {
+    color: #85662b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .content {
+    color: #8b7f75;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  }
+  .content.show {
+    height: auto;
+    max-height: 999px;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  }
+  
+  @media only screen and (min-width: 350px) and (max-width: 900px) {
+    .item1 {
+      margin-left: 20px;
+      width: 290px;
+  
+      font-size: 15px;
+    }
+    .item2 {
+      width: 300px;
+  
+      margin-left: 25px;
+    }
+    .item2,
+    .text {
+      color: #85662b;
+      cursor: pointer;
+      margin-right: 10px;
+      font-size: 15px;
+    }
+    .accordion {
+      margin-bottom: 100px;
+    }
+  }
+  
